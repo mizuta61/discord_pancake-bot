@@ -15,11 +15,9 @@ client.once("ready", () => {
 client.on("messageCreate", async (message: Message) => {
   if (message.author.bot) return;
   if (message.content === "ぱ") {
-    message.channel.send({ files: ['./img/1.jpg'] });
-  } else if (message.content === "けき") {
-    message.channel.send({ files: ['./img/2.jpg'] });
+    message.channel.send("https://imgur.com/eoeCqai");
   } else if (message.content.startsWith('ぱんけーき')) {
-    message.channel.send({ files: ['./img/3.jpg'] });
+    message.channel.send("https://imgur.com/SD0Lcs3");
   }
 });
 
